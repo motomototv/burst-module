@@ -31,6 +31,7 @@ type HandleGin interface {
 }
 
 type API interface {
+	APIValid() bool
 	HandleHTTP
 	HandleGin
 }
