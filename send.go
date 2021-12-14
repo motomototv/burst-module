@@ -1,7 +1,12 @@
 package plugin
 
+import (
+	"context"
+)
+
 // Sender ...
 // @Description:
 type Sender interface {
-	Send(id string, msg []byte) error
+	SendRequest(ctx context.Context, id string, msg []byte) error
+	AnswerResponse(ctx context.Context, id string, msg []byte) error
 }
