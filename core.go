@@ -9,14 +9,18 @@ type Plugin interface {
 	Version() int
 	Start(node Node) error
 	Handler
-	Sender
 }
 
-type Node interface {
+type core interface {
 	Context() context.Context
-	//Config() *BurstConfig
 	RepoPath() string
 	Identity() string
 	RegisterPlugin(plugin Plugin)
 	State() NodeState
+}
+
+type Node interface {
+	core
+	Sender
+	Reporter
 }
