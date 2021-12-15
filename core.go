@@ -26,5 +26,5 @@ type Plugin interface {
 	Name() string
 	Version() int
 	Start(node Node) error
-	Handler
+	ContentHandler
 }
