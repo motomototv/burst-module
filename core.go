@@ -19,12 +19,3 @@ type Node interface {
 	Sender
 	Reporter
 }
-
-// Plugin ...
-// @Description:
-type Plugin interface {
-	Name() string
-	Version() int
-	Start(node Node) error
-	ContentHandler
-}
