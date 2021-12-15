@@ -1,7 +1,7 @@
 package plugin
 
-// Handler ...
+// ContentHandler ...
 // @Description:
-type Handler interface {
+type ContentHandler interface {
 	Handle(id string, bytes []byte) error
 }
