@@ -1,8 +1,8 @@
 package plugin
 
-// Plugin ...
+// Module ...
 // @Description:
-type Plugin interface {
+type Module interface {
 	Name() string
 	Version() int
 	Start(node Node) error

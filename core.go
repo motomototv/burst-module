@@ -8,7 +8,7 @@ type core interface {
 	Context() context.Context
 	RepoPath() string
 	Identity() string
-	RegisterPlugin(plugin Plugin)
+	Register(plugin Module)
 	State() NodeState
 }
 

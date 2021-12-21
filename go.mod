@@ -1,4 +1,4 @@
-module github.com/motomototv/burst-plugin
+module github.com/motomototv/burst-module
 
 go 1.17
 
