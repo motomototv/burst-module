@@ -7,6 +7,6 @@ import (
 // Sender ...
 // @Description:
 type Sender interface {
-	SendRequest(ctx context.Context, id string, msg []byte) error
-	AnswerResponse(ctx context.Context, id string, msg []byte) error
+	SendRequest(ctx context.Context, id ID, msg []byte) error
+	AnswerResponse(ctx context.Context, id ID, msg []byte) error
 }
