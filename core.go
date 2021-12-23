@@ -11,11 +11,3 @@ type core interface {
 	Register(plugin Module)
 	State() NodeState
 }
-
-// Node ...
-// @Description:
-type Node interface {
-	core
-	Sender
-	Reporter
-}
